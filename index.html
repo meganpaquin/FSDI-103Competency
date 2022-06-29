@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Checklist</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b8896c554.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>ToDo List</h1>
+        <div id="calendar">
+                <div id="date">
+                <h3>June</h3>
+                <h3>2022</h3>
+                </div>
+            <span>26</span>
+        </div>
+    </header>
+    <main>
+        <ul id="the_list">
+            <li class="list_item">
+                <div class="item_data">
+                    <input type="text" id="new_item_title" placeholder="Enter the task title"></input>
+                    <input type ="text" id="new_item_task" placeholder="Enter the task description"></input>
+                </div>
+                <div>
+                    <button id="addnew" onclick="addnewitem()">+</button>
+                </div>
+            </li>
+
+            <li id="item_number1000" class="list_item">
+                <div class="item_data">
+                    <h4 id="item_title1000">This is an example title.</h4>
+                    <h5 id="item_description1000">This is an example ToDo item.</h5>
+                </div>
+                <div class="item_icons">
+                    <button onclick="itemcomplete(1000);" class="complete"><i class="fa-solid fa-check check_icon"></i></button>
+                </div>
+                <div class="item_icons">
+                    <button onclick="deleteitem(1000);" class="delete"><i class="fa-solid fa-trash-can trash_icon"></i></button>
+                </div>
+            </li>  
+        </ul>
+
+        <ul id="completed_items_list">
+
+        </ul>
+
+        
+
+        
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
