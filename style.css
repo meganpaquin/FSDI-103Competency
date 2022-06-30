@@ -341,7 +341,7 @@ ul{
     }
 }
 
-@media screen and (min-width:766px) and (max-width:1200px){
+@media screen and (min-width:766px) and (max-width:1400px){
     *{
         margin: 0;
         padding: 0;
@@ -352,6 +352,29 @@ ul{
         padding-top: 30px;
     }
 
+    #completed_itmes_list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .item_data_completed h4{
+        margin: 15px 100px 10px 15px;
+        padding: 0;
+    }
+    
+    .item_data_completed h5{
+        margin: 0 10px 30px 30px;
+        padding: 0;
+    }
+    
+    .item_data_completed{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
     #calendar{
         margin-top: 30px;
     }
@@ -359,20 +382,36 @@ ul{
     #new_item_title{
         font-size: 16px;
         font-weight: bold;
-        margin: 10px 180px 10px 15px;
+        margin: 10px 50px 10px 15px;
         padding: 5px;
-        width: 600px;
+        width: 440px;
     }
 
     #new_item_task{
         font-size: 16px;
-        margin: 10px 180px 10px 15px;
+        margin: 10px 50px 10px 15px;
         padding: 5px;
-        width: 600px;
+        width: 440px;
     }  
 
+    #the_list{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #completed_items_list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: fit-content;
+    }
+
     .list_item{
-        width: 100%;
+        width: 595px;
         margin-bottom: 10px;
     }
 
@@ -386,8 +425,8 @@ ul{
     }
 
     .item_data h4, h5{
-        width: 600px;
-        margin: 15px 140px 10px 15px;
+        width: 420px;
+        margin: 15px 0 10px 15px;
         height: auto;
     }
 
